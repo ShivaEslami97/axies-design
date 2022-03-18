@@ -18,6 +18,7 @@ header {
   -webkit-box-shadow: 0 4px 20px 0 rgb(10 10 10 / 80%);
   -moz-box-shadow: 0 4px 20px 0 rgba(10, 10, 10, 0.8);
   box-shadow: 0 4px 20px 0 rgb(10 10 10 / 80%);
+  border-bottom: 1px solid rgb(235 235 235 / 0%);
 }
 .nav__list {
   margin: 0;
