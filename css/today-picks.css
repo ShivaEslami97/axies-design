@@ -1,0 +1,111 @@
+.today-picks {
+  padding: 8rem 0 4rem;
+  background: var(--bg-color-1);
+}
+.picks__flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+.picks__flex .section__header {
+  padding-bottom: 0;
+}
+.picks__filter .btn__secondary {
+  padding: 0.7rem 1.7rem;
+}
+.picks__filter .btn__secondary i {
+  padding-right: 0.5rem;
+  font-size: 2.4rem;
+}
+.picks__filter {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.filter__category {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+.picks__card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem 2rem;
+}
+.picks__card .col + .col {
+  margin-left: 0px;
+}
+.picks__card .card__img .card-btn__like {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 3;
+}
+.card-btn__history {
+  font-size: 1.48rem;
+  color: var(--primary-color-1);
+  font-weight: 600;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.card-btn__history i {
+  color: var(--white-color);
+  margin-right: 0.5rem;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.picks__load-more {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.card-btn__history:hover {
+  color: var(--main-color);
+}
+.card-btn__history:hover i {
+  -webkit-animation-name: cycle;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: cycle;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  -moz-animation-name: cycle;
+  -moz-animation-duration: 2s;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-fill-mode: forwards;
+  color: var(--main-color);
+}
+@-webkit-keyframes cycle {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes cycle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes cycle {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}

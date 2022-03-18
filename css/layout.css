@@ -1,0 +1,215 @@
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+:root {
+  --white-color: #fff;
+  --main-color: #5142fc;
+  --primary-color: #343444;
+  --primary-color-1: #ebebeb;
+  --primary-color-2: #030303;
+  --primary-color-3: #ffffff;
+  --bg-footer: #0d0d11;
+  --bg-color-1: #14141f;
+  --primary-color-4: #46a433;
+  --primary-color-5: #9835fb;
+  --primary-color-6: #df4949;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background: var(--primary-color);
+  font-family: "Urbanist", sans-serif;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+section {
+  padding: 5.7em 0;
+}
+/* ------------------- */
+/* Utility classes     */
+/* ------------------- */
+
+.flex {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  /* gap: var(--gap, 1rem); */
+}
+.d-block {
+  display: block;
+}
+.container {
+  padding-inline: 2em;
+  margin-inline: auto;
+  width: 1440px;
+  max-width: 100%;
+}
+.col {
+  width: 100%;
+}
+.col + .col {
+  margin-left: 30px;
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+.pb-0 {
+  padding-bottom: 0;
+}
+.ml-0 {
+  margin-left: 0;
+}
+.mr-0 {
+  margin-left: 0;
+}
+/* ------------------- */
+/* Compontents         */
+/* ------------------- */
+.btn {
+  font-family: inherit;
+  padding: 1.1rem 3.5rem;
+  outline: 0;
+  box-sizing: border-box;
+  border-radius: 30rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  position: relative;
+}
+.btn__primary {
+  color: var(--white-color);
+  box-shadow: inset 0 0 0 0.2rem var(--main-color);
+  background: transparent;
+  border: 0;
+}
+.btn__primary:hover {
+  background-color: var(--main-color);
+}
+.btn__secondary {
+  border: 2px solid #adadb0;
+  color: var(--white-color);
+  background: transparent;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+.btn__secondary:hover {
+  border-color: transparent;
+  outline: 0 none;
+}
+.btn.btn__secondary::after {
+  position: absolute;
+  content: "";
+  height: calc(100% + 0.4rem);
+  width: calc(100% + 0.4rem);
+  background-image: linear-gradient(
+    to right,
+    rgba(50, 100, 245, 0.61) 2%,
+    rgba(114, 2, 187, 0.6) 82%
+  );
+  top: -0.2rem;
+  left: -0.2rem;
+  border-radius: 30rem;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  z-index: -1;
+}
+.btn.btn__secondary:hover::after {
+  opacity: 1;
+}
+
+.section__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 3.8rem;
+}
+.section__header h2 {
+  font-size: 3.5rem;
+  color: var(--white-color);
+}
+.section__header a {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--white-color);
+  position: relative;
+  -webkit-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+  padding-bottom: 0.3rem;
+}
+.section__header a:hover {
+  color: var(--main-color);
+}
+.section__header a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #925add;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.section__header a:hover::after {
+  background-color: #31274f;
+  width: 80%;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: var(--white-color);
+  color: var(--main-color);
+  border-radius: 3rem;
+  border: 0;
+  transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  box-shadow: -4px 4px 24px -10px;
+  z-index: 99;
+}
+.hidden {
+  display: none;
+}

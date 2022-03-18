@@ -1,0 +1,72 @@
+.popular-collection {
+  padding: 8rem 0 0;
+  background: var(--bg-section);
+}
+.popular-collection__card {
+  background: var(--primary-color);
+  border-radius: 1rem;
+  padding: 2rem 2rem;
+}
+.card__img {
+  margin-bottom: 1.6rem;
+}
+.popular-collection__card .card__img--top {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+}
+.popular-collection__card .card__img--top img {
+  height: 13rem;
+  width: 18.6rem;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.popular-collection__card .card__img--top img + img {
+  margin-left: 1rem;
+}
+.popular-collection__card .card__img--bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.popular-collection__card .card__img--bottom img {
+  width: 12rem;
+  height: 12.5rem;
+  object-fit: cover;
+}
+.popular-collection__card .card__content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.popular-collection__card .card__creator {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+}
+.popular-collection__card .card__creator img {
+  width: 6.3rem;
+  height: 6.2rem;
+  border-radius: 2.1rem;
+}
+.popular-collection__card .card__creator .card-creator__data h5 {
+  font-size: 1.9rem;
+  color: var(--white-color);
+  margin-bottom: 0.4rem;
+}
+.popular-collection__card .card__creator .card-creator__data span {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  color: var(--primary-color-1);
+}
+.popular-collection__card .card__creator .card-creator__data span + a {
+  font-size: 1.4rem;
+}

@@ -1,0 +1,47 @@
+.top-seller {
+  padding: 8rem 0 0;
+  background: var(--bg-color-1);
+}
+.top-seller__wrapper {
+  grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  gap: 2.5rem;
+  width: 95%;
+}
+.top-seller__creator {
+  display: flex;
+  align-items: center;
+}
+.top-seller .top-seller__creator .top-seller__pic {
+  border-radius: 3.3rem;
+  margin-right: 1.5rem;
+  position: relative;
+}
+.top-seller .top-seller__creator img {
+  width: 10rem;
+  border-radius: 3.3rem;
+}
+.top-seller__creator .top-seller__data h5 {
+  font-size: 1.7rem;
+  color: var(--white-color);
+  margin-bottom: 0.8rem;
+}
+.top-seller__creator .top-seller__data span {
+  color: #adadb0;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.top-seller__pic .check {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 2.7rem;
+  height: 2.7rem;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  border-radius: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+}
