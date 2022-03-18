@@ -113,9 +113,9 @@ header {
   content: "";
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%) translateX(-10px);
-  -ms-transform: translateY(-50%) translateX(-10px);
-  transform: translateY(-50%) translateX(-10px);
+  -webkit-transform: translateY(-50%) translateX(-1rem);
+  -ms-transform: translateY(-50%) translateX(-1ren);
+  transform: translateY(-50%) translateX(-1ren);
   left: 0;
   opacity: 0;
   visibility: hidden;
@@ -130,9 +130,9 @@ header {
 .nav__child li a:hover::before {
   opacity: 1;
   visibility: visible;
-  -webkit-transform: translateY(-50%) translateX(0px);
-  -ms-transform: translateY(-50%) translateX(0px);
-  transform: translateY(-50%) translateX(0px);
+  -webkit-transform: translateY(-50%) translateX();
+  -ms-transform: translateY(-50%) translateX(0);
+  transform: translateY(-50%) translateX(0);
 }
 .header__item-center {
   display: -webkit-box;
@@ -220,8 +220,8 @@ header {
   width: 100%;
   padding-left: 2rem;
   border: 1px solid var(--white-color);
-  border-radius: 30px;
-  line-height: 23px;
+  border-radius: 3rem;
+  line-height: 2.3rem;
   padding: 1.3rem 5rem 1.3rem 1.5rem;
   font-size: 1.7rem;
 }
