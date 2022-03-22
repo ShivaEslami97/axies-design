@@ -4,7 +4,7 @@
   min-height: 100vh;
 }
 main #login .container {
-  width: 1440px;
+  width: 1640px;
   max-width: 100%;
   padding-inline: 0em;
 }
@@ -64,7 +64,7 @@ main #login .container {
   width: 100%;
   min-height: calc(1.5em + 1.65rem + 2px);
   padding: 1.5rem 1.5rem;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   border-radius: 0.475rem;
   box-shadow: none;
   outline: none;
@@ -97,6 +97,13 @@ main #login .container {
   border: none;
   color: var(--white-color);
   font-size: 1.5rem;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+}
+.form--submit .btn:hover {
 }
 .login__content .new-signup {
   font-size: 1.5rem;
@@ -208,4 +215,7 @@ main #login .container {
 }
 .form--password {
   position: relative;
+}
+.login__form input#password[type="text"] + #password-show .fa-eye::before {
+  content: "\f2a8";
 }

@@ -11,15 +11,18 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" />
     <link rel="stylesheet" type="text/css" href="css/layout.css" />
-    <link rel="stylesheet" type="text/css" href="css/login.css" />
+    <link rel="stylesheet" type="text/css" href="css/login/login.css" />
 </head>
 
 <body>
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
     <main>
         <section id="login">
             <div class="container flex">
                 <div class="login__img">
-                    <img src="images/2052945-ai (1).svg" alt="login image">
+                    <img src="images/login/2052945-ai (1).svg" alt="login image">
                 </div>
                 <div class="login__content flex">
                     <h2>Sign In</h2>
@@ -31,10 +34,10 @@
                         <div class="form__input">
                             <label class="form__label" for="password">Password</label>
                             <div class="form--password">
-                                <input autocomplete="off" type="text" name="password" placeholder="Password"
+                                <input autocomplete="off" type="password" name="password" placeholder="Password"
                                     id="password">
                                 <button class="position-absolute" type="button" id="password-show">
-                                    <i class="fa-solid fa-eye"></i></button>
+                                    <i class="fa-solid fa-eye eye-fill"></i></button>
                             </div>
                         </div>
                         <div class="form__input form--submit">
@@ -65,6 +68,7 @@
             </div>
         </section>
     </main>
+    <script src="js/login/login.js"></script>
 </body>
 
 </html>
