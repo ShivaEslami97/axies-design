@@ -90,6 +90,12 @@ section {
 .mr-0 {
   margin-left: 0;
 }
+.justify-content-center {
+  justify-content: center;
+}
+.position-absolute {
+  position: absolute;
+}
 /* ------------------- */
 /* Compontents         */
 /* ------------------- */

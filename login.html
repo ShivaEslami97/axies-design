@@ -11,10 +11,60 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" />
     <link rel="stylesheet" type="text/css" href="css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
 </head>
 
 <body>
-
+    <main>
+        <section id="login">
+            <div class="container flex">
+                <div class="login__img">
+                    <img src="images/2052945-ai (1).svg" alt="login image">
+                </div>
+                <div class="login__content flex">
+                    <h2>Sign In</h2>
+                    <form class="login__form">
+                        <div class="form__input form--email">
+                            <label class="form__label" for="email">Email</label>
+                            <input autocomplete="off" type="email" name="email" placeholder="Email Address" id="email">
+                        </div>
+                        <div class="form__input">
+                            <label class="form__label" for="password">Password</label>
+                            <div class="form--password">
+                                <input autocomplete="off" type="text" name="password" placeholder="Password"
+                                    id="password">
+                                <button class="position-absolute" type="button" id="password-show">
+                                    <i class="fa-solid fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="form__input form--submit">
+                            <button type="submit" class="btn">Sign in</button>
+                        </div>
+                    </form>
+                    <p class="new-signup">New on our platform?
+                        <a href="#">Create an account</a>
+                    </p>
+                    <div class="signin-other-title">
+                        <span>or</span>
+                    </div>
+                    <div class="login__social">
+                        <a class="social__icon social--facebook" href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a class="social__icon social--twitter" href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a class="social__icon social--gmail" href="#">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a class="social__icon social--github" href="#">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
