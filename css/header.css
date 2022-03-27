@@ -284,7 +284,7 @@ header {
   font-size: 2.1rem;
 }
 .theme__switcher a.day {
-  background: linear-gradient(216.56deg, #e250e5 5.32%, #4b50e6 94.32%);
+  background: linear-gradient(216.56deg, #7c127e 5.32%, #3e43d5 94.32%);
 }
 .day i {
   animation: spin-animation 5000ms infinite linear;

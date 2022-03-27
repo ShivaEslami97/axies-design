@@ -29,13 +29,18 @@
                     <form class="login__form">
                         <div class="form__input form--email">
                             <label class="form__label" for="email">Email</label>
-                            <input autocomplete="off" type="email" name="email" placeholder="Email Address" id="email">
+                            <div class="form--email">
+                                <input autocomplete="off" type="email" name="email" placeholder="Email Address"
+                                    id="email">
+                                <i class="input-icons fa-solid fa-envelope"></i>
+                            </div>
                         </div>
                         <div class="form__input">
                             <label class="form__label" for="password">Password</label>
                             <div class="form--password">
                                 <input autocomplete="off" type="password" name="password" placeholder="Password"
                                     id="password">
+                                <i class="input-icons fa-solid fa-lock"></i>
                                 <button class="position-absolute" type="button" id="password-show">
                                     <i class="fa-solid fa-eye eye-fill"></i></button>
                             </div>

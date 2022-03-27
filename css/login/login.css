@@ -63,8 +63,8 @@ main #login .container {
   display: block;
   width: 100%;
   min-height: calc(1.5em + 1.65rem + 2px);
-  padding: 1.5rem 1.5rem;
-  font-size: 1.4rem;
+  padding: 1.5rem 2.8rem;
+  font-size: 1.5rem;
   border-radius: 0.475rem;
   box-shadow: none;
   outline: none;
@@ -79,9 +79,20 @@ main #login .container {
   -ms-transition: border-color 0.15s ease-in-out;
   -o-transition: border-color 0.15s ease-in-out;
 }
+.input-icons {
+  position: absolute;
+  font-size: 1rem;
+  left: 1rem;
+  top: calc(50% - 0.49em);
+  font-size: 1.3rem;
+  color: #878a99;
+}
 .login__form input:focus,
 .login__form input:active {
   border: 1px solid var(--main-color);
+}
+.login__form input:focus + .input-icons {
+  color: var(--main-color);
 }
 .form__input {
   width: 77%;
@@ -97,13 +108,40 @@ main #login .container {
   border: none;
   color: var(--white-color);
   font-size: 1.5rem;
-  transition: all 0.3s ease-in;
-  -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  -moz-transition: all 0.3s ease-in;
-  -ms-transition: all 0.3s ease-in;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 .form--submit .btn:hover {
+  transform: translateY(-0.3rem);
+  -webkit-transform: translateY(-0.3rem);
+  -moz-transform: translateY(-0.3rem);
+  -ms-transform: translateY(-0.3rem);
+  -o-transform: translateY(-0.3rem);
+}
+.form--submit .btn::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #483dc8;
+  transition: all 0.3s;
+  border-radius: 0.475rem;
+  -webkit-border-radius: 0.475rem;
+  -moz-border-radius: 0.475rem;
+  -ms-border-radius: 0.475rem;
+  -o-border-radius: 0.475rem;
+  z-index: -1;
+}
+.form--submit .btn:hover:before {
+  width: 100%;
 }
 .login__content .new-signup {
   font-size: 1.5rem;
@@ -213,7 +251,8 @@ main #login .container {
   color: #878a99;
   cursor: pointer;
 }
-.form--password {
+.form--password,
+.form--email {
   position: relative;
 }
 .login__form input#password[type="text"] + #password-show .fa-eye::before {

@@ -32,6 +32,7 @@ html {
 body {
   background: var(--primary-color);
   font-family: "Urbanist", sans-serif;
+  overflow-x: hidden;
 }
 img {
   max-width: 100%;
@@ -176,6 +177,22 @@ section {
   -o-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
   padding-bottom: 0.3rem;
+  background: #fd4766;
+  background: #fd4766;
+  background: linear-gradient(
+    120deg,
+    #3338e9 20.69%,
+    #9b2e9d 50.19%,
+    #fd4766 79.69%
+  );
+  background: linear-gradient(
+    120deg,
+    #3338e9 20.69%,
+    #9b2e9d 50.19%,
+    #fd4766 79.69%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .section__header a:hover {
   color: var(--main-color);
@@ -185,16 +202,27 @@ section {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 40%;
   height: 1px;
-  background-color: #925add;
+  background: linear-gradient(
+    120deg,
+    #3338e9 20.69%,
+    #9b2e9d 50.19%,
+    #fd4766 79.69%
+  );
+  background: linear-gradient(
+    120deg,
+    #3338e9 20.69%,
+    #9b2e9d 50.19%,
+    #fd4766 79.69%
+  );
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 .section__header a:hover::after {
   background-color: #31274f;
-  width: 80%;
+  width: 100%;
 }
 .back-to-top {
   position: fixed;
