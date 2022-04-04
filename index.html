@@ -25,120 +25,138 @@
     </div>
     <!-- header -->
     <header class="header" id="header">
-        <div class="container wrapper">
-            <div class="header__item-left site-logo">
-                <img src="images/01_header/logo_dark.png" alt="Axies logo image">
-            </div>
-            <nav class="header__item-center navbar">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Home
-                            <i class="fa-solid fa-chevron-down"></i></a>
-                        <ul class="nav__child is-hidden">
-                            <li><a href="#">Home 1 </a></li>
-                            <li><a href="#">Home 2 </a></li>
-                            <li><a href="#">Home 3 </a></li>
-                            <li><a href="#">Home 4 </a></li>
-                            <li><a href="#">Home 4 </a></li>
-                            <li><a href="#">Home 4 </a></li>
-                        </ul>
-                    </li>
-                    <li class="nav__item"><a class="nav__link" href="#">Explore
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </a>
-                        <ul class="nav__child is-hidden">
-                            <li><a href="#">Explore 1 </a></li>
-                            <li><a href="#">Explore 2 </a></li>
-                            <li><a href="#">Explore 3 </a></li>
-                            <li><a href="#">Explore 4 </a></li>
-                            <li><a href="#">Explore 4 </a></li>
-                            <li><a href="#">Explore 4 </a></li>
-                        </ul>
-                    </li>
-                    <li class="nav__item"><a class="nav__link" href="#">Activity
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </a>
-                        <ul class="nav__child is-hidden">
-                            <li><a href="#">Activity 1 </a></li>
-                            <li><a href="#">Activity 2 </a></li>
-                            <li><a href="#">Activity 3 </a></li>
-                            <li><a href="#">Activity 4 </a></li>
-                            <li><a href="#">Activity 4 </a></li>
-                            <li><a href="#">Activity 4 </a></li>
-                        </ul>
-                    </li>
-                    <li class="nav__item"><a class="nav__link" href="#">Community
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </a>
-                        <ul class="nav__child is-hidden">
-                            <li><a href="#">Community 1 </a></li>
-                            <li><a href="#">Community 2 </a></li>
-                            <li><a href="#">Community 3 </a></li>
-                            <li><a href="#">Community 4 </a></li>
-                            <li><a href="#">Community 4 </a></li>
-                            <li><a href="#">Community 4 </a></li>
-                        </ul>
-                    </li>
-                    <li class="nav__item"><a class="nav__link" href="#">Pages
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </a>
-                        <ul class="nav__child is-hidden">
-                            <li><a href="#">Pages 1 </a></li>
-                            <li><a href="#">Pages 2 </a></li>
-                            <li><a href="#">Pages 3 </a></li>
-                            <li><a href="#">Pages 4 </a></li>
-                            <li><a href="#">Pages 4 </a></li>
-                            <li><a href="#">Pages 4 </a></li>
-                        </ul>
-                    </li>
-                    <li class="nav__item"><a class="nav__link" href="#">Contact
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </a>
-                        <ul class="nav__child is-hidden">
-                            <li><a href="#">Contact 1 </a></li>
-                            <li><a href="#">Contact 2 </a></li>
-                            <li><a href="#">Contact 3 </a></li>
-                            <li><a href="#">Contact 4 </a></li>
-                            <li><a href="#">Contact 4 </a></li>
-                            <li><a href="#">Contact 4 </a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-            <div class="header__item-right">
-                <div class="search__box">
-                    <div class="header__search">
-                        <a class="search__link" href="#">
-                            <svg width="22" height="22" viewBox="0 0 20 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z"
-                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M17.5 17.5L13.875 13.875" stroke="white" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </a>
-                        <div class="search__open-box">
-                            <form class="search__form">
-                                <input type="text" class="search__input" placeholder="Search...">
-                                <button type="submit" class="search__submit">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                    <a href="login.html" class="btn btn__primary">
-                        <i class="fa-solid fa-arrow-right-to-bracket"></i>
-                        sign in
-                    </a>
+        <div class="inner_header">
+            <div class="container wrapper">
+                <div class="header__item-left site-logo">
+                    <img src="images/01_header/logo_dark.png" alt="Axies logo image">
                 </div>
-                <div class="theme__switcher">
-                    <a href="#" class="day">
-                        <i class="fa-solid fa-sun"></i>
-                    </a>
-                    <a href="#" class="night">
-                        <i class="fa-solid fa-moon"></i>
-                    </a>
+                <div class="header__item-center">
+                    <nav class="navbar">
+                        <div class="menu-mobile-header">
+                            <button type="button" class="menu-mobile-arrow">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </button>
+                            <div class="menu-mobile-title"></div>
+                            <button type="button" class="menu-mobile-close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                        <ul class="nav__list">
+                            <li class="nav__item has-children">
+                                <a class="nav__link" href="#">Home
+                                    <i class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="nav__child is-hidden">
+                                    <li><a href="#">Home 1 </a></li>
+                                    <li><a href="#">Home 2 </a></li>
+                                    <li><a href="#">Home 3 </a></li>
+                                    <li><a href="#">Home 4 </a></li>
+                                    <li><a href="#">Home 4 </a></li>
+                                    <li><a href="#">Home 4 </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__item has-children"><a class="nav__link" href="#">Explore
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul class="nav__child is-hidden">
+                                    <li><a href="#">Explore 1 </a></li>
+                                    <li><a href="#">Explore 2 </a></li>
+                                    <li><a href="#">Explore 3 </a></li>
+                                    <li><a href="#">Explore 4 </a></li>
+                                    <li><a href="#">Explore 4 </a></li>
+                                    <li><a href="#">Explore 4 </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__item has-children"><a class="nav__link" href="#">Activity
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul class="nav__child is-hidden">
+                                    <li><a href="#">Activity 1 </a></li>
+                                    <li><a href="#">Activity 2 </a></li>
+                                    <li><a href="#">Activity 3 </a></li>
+                                    <li><a href="#">Activity 4 </a></li>
+                                    <li><a href="#">Activity 4 </a></li>
+                                    <li><a href="#">Activity 4 </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__item"><a class="nav__link" href="#">Community
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul class="nav__child is-hidden">
+                                    <li><a href="#">Community 1 </a></li>
+                                    <li><a href="#">Community 2 </a></li>
+                                    <li><a href="#">Community 3 </a></li>
+                                    <li><a href="#">Community 4 </a></li>
+                                    <li><a href="#">Community 4 </a></li>
+                                    <li><a href="#">Community 4 </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__item"><a class="nav__link" href="#">Pages
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul class="nav__child is-hidden">
+                                    <li><a href="#">Pages 1 </a></li>
+                                    <li><a href="#">Pages 2 </a></li>
+                                    <li><a href="#">Pages 3 </a></li>
+                                    <li><a href="#">Pages 4 </a></li>
+                                    <li><a href="#">Pages 4 </a></li>
+                                    <li><a href="#">Pages 4 </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__item"><a class="nav__link" href="#">Contact
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul class="nav__child is-hidden">
+                                    <li><a href="#">Contact 1 </a></li>
+                                    <li><a href="#">Contact 2 </a></li>
+                                    <li><a href="#">Contact 3 </a></li>
+                                    <li><a href="#">Contact 4 </a></li>
+                                    <li><a href="#">Contact 4 </a></li>
+                                    <li><a href="#">Contact 4 </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="header__item-right">
+                    <div class="search__box">
+                        <div class="header__search">
+                            <a class="search__link" href="#">
+                                <svg width="22" height="22" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z"
+                                        stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M17.5 17.5L13.875 13.875" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <div class="search__open-box">
+                                <form class="search__form">
+                                    <input type="text" class="search__input" placeholder="Search...">
+                                    <button type="submit" class="search__submit">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <a href="login.html" class="btn btn__primary">
+                            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                            sign in
+                        </a>
+                    </div>
+                    <div class="theme__switcher">
+                        <a href="#" class="day">
+                            <i class="fa-solid fa-sun"></i>
+                        </a>
+                        <a href="#" class="night">
+                            <i class="fa-solid fa-moon"></i>
+                        </a>
+                    </div>
+                    <div class="menu-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
                 </div>
             </div>
         </div>

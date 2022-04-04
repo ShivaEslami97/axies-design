@@ -1,7 +1,7 @@
 .hero {
   min-height: 100vh;
   background: var(--bg-color-1);
-  padding: 3rem 0 1.7em;
+  padding: 9rem 0 1.7em;
 }
 /* .bg__gradient {
   position: relative;

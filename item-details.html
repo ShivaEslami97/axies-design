@@ -1,0 +1,852 @@
+<html lang="en">
+
+<head>
+    <title>Product</title>
+    <link rel="shortcut icon" href="images/01_header/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/font.css" />
+    <link rel="stylesheet" type="text/css" href="css/all.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" href="css/live-auctions.css" />
+    <link rel="stylesheet" type="text/css" href="css/top-seller.css" />
+    <link rel="stylesheet" type="text/css" href="css/pages/item-details.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="css/fixed-sidebar.css" />
+</head>
+
+<body>
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+    <!-- header -->
+    <header class="header" id="header">
+        <div class="inner_header">
+            <div class="container wrapper">
+                <div class="header__item-left site-logo">
+                    <img src="images/01_header/logo_dark.png" alt="Axies logo image">
+                </div>
+                <div class="header__item-center">
+                    <nav class="navbar">
+                        <div class="menu-mobile-header">
+                            <button type="button" class="menu-mobile-arrow">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </button>
+                            <div class="menu-mobile-title"></div>
+                            <button type="button" class="menu-mobile-close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                        <ul class="nav__list">
+                            <li class="nav__item has-children">
+                                <a class="nav__link" href="#">Home
+                                    <i class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="nav__child is-hidden">
+                                    <li><a href="#">Home 1 </a></li>
+                                    <li><a href="#">Home 2 </a></li>
+                                    <li><a href="#">Home 3 </a></li>
+                                    <li><a href="#">Home 4 </a></li>
+                                    <li><a href="#">Home 4 </a></li>
+                                    <li><a href="#">Home 4 </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__item has-children"><a class="nav__link" href="#">Explore
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul class="nav__child is-hidden">
+                                    <li><a href="#">Explore 1 </a></li>
+                                    <li><a href="#">Explore 2 </a></li>
+                                    <li><a href="#">Explore 3 </a></li>
+                                    <li><a href="#">Explore 4 </a></li>
+                                    <li><a href="#">Explore 4 </a></li>
+                                    <li><a href="#">Explore 4 </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__item has-children"><a class="nav__link" href="#">Activity
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul class="nav__child is-hidden">
+                                    <li><a href="#">Activity 1 </a></li>
+                                    <li><a href="#">Activity 2 </a></li>
+                                    <li><a href="#">Activity 3 </a></li>
+                                    <li><a href="#">Activity 4 </a></li>
+                                    <li><a href="#">Activity 4 </a></li>
+                                    <li><a href="#">Activity 4 </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__item"><a class="nav__link" href="#">Community
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul class="nav__child is-hidden">
+                                    <li><a href="#">Community 1 </a></li>
+                                    <li><a href="#">Community 2 </a></li>
+                                    <li><a href="#">Community 3 </a></li>
+                                    <li><a href="#">Community 4 </a></li>
+                                    <li><a href="#">Community 4 </a></li>
+                                    <li><a href="#">Community 4 </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__item"><a class="nav__link" href="#">Pages
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul class="nav__child is-hidden">
+                                    <li><a href="#">Pages 1 </a></li>
+                                    <li><a href="#">Pages 2 </a></li>
+                                    <li><a href="#">Pages 3 </a></li>
+                                    <li><a href="#">Pages 4 </a></li>
+                                    <li><a href="#">Pages 4 </a></li>
+                                    <li><a href="#">Pages 4 </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__item"><a class="nav__link" href="#">Contact
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul class="nav__child is-hidden">
+                                    <li><a href="#">Contact 1 </a></li>
+                                    <li><a href="#">Contact 2 </a></li>
+                                    <li><a href="#">Contact 3 </a></li>
+                                    <li><a href="#">Contact 4 </a></li>
+                                    <li><a href="#">Contact 4 </a></li>
+                                    <li><a href="#">Contact 4 </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="header__item-right">
+                    <div class="search__box">
+                        <div class="header__search">
+                            <a class="search__link" href="#">
+                                <svg width="22" height="22" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z"
+                                        stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M17.5 17.5L13.875 13.875" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <div class="search__open-box">
+                                <form class="search__form">
+                                    <input type="text" class="search__input" placeholder="Search...">
+                                    <button type="submit" class="search__submit">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <a href="login.html" class="btn btn__primary">
+                            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                            sign in
+                        </a>
+                    </div>
+                    <div class="theme__switcher">
+                        <a href="#" class="day">
+                            <i class="fa-solid fa-sun"></i>
+                        </a>
+                        <a href="#" class="night">
+                            <i class="fa-solid fa-moon"></i>
+                        </a>
+                    </div>
+                    <div class="menu-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- fixed sidebar menu -->
+    <div class="sticky__social">
+        <ul class="social__list">
+            <li class="social__item  social--telegram"><a class="social__link" href="#">
+                    <i class="fa-brands fa-telegram"></i>
+                </a></li>
+            <li class="social__item  social--facebook"><a class="social__link" href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a></li>
+            <li class="social__item"><a class="social__link social--telegram" href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                </a></li>
+            <li class="social__item"><a class="social__link social--github" href="#">
+                    <i class="fa-brands fa-github"></i>
+                </a></li>
+            <li class="social__item"><a class="social__link social--instagram" href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a></li>
+            <li class="social__item"><a class="social__link social--linkedin" href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a></li>
+            <li class="social__item"><a class="social__link social--dribbble" href="#">
+                    <i class="fa-brands fa-dribbble"></i>
+                </a></li>
+        </ul>
+    </div>
+    <!-- main -->
+    <main class="main">
+        <!-- page-title -->
+        <section class="page-title">
+            <div class="container flex">
+                <div class="col page__header">
+                    <h1>Item Details 1</h1>
+                    <nav class="page__breadcrumbs flex">
+                        <ul class="breadcrumb__list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">Explore</a></li>
+                            <li>Item Details 1</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <!-- item-details -->
+        <section class="item-details">
+            <div class="container flex">
+                <div class="item__img">
+                    <img src="images/item-single/item-details.jpg" alt="item details image">
+                </div>
+                <div class="item__content">
+                    <h2 class="item__heading">“The Fantasy Flower illustration ”</h2>
+                    <div class="item_social">
+                        <div class="item-social__left">
+                            <a href="#" class="card-btn__like">
+                                <i class="mdi mdi-eye-outline"></i>
+                                225</a>
+                            <a href="#" class="card-btn__like">
+                                <i class="mdi mdi-cards-heart-outline"></i>
+                                120</a>
+                        </div>
+                        <div class="item-social__right">
+                            <a href="#" class="item__share">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </a>
+                            <a href="#" class="item__more">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- item owners -->
+                    <div class="item__owners">
+                        <div class="item-info item__owner">
+                            <div class="item-owner__pic">
+                                <img src="images/04_Top Seller/avt-1.jpg" alt="picks card img">
+                            </div>
+                            <div class="item-owner__info">
+                                <span> Owned By</span>
+                                <h6> <a href="#">Ralph Garraway</a> </h6>
+                            </div>
+                        </div>
+                        <div class="item-info item__owner">
+                            <div class="item-owner__pic">
+                                <img src="images/04_Top Seller/avt-4.jpg" alt="picks card img">
+                            </div>
+                            <div class="item-owner__info">
+                                <span>Create By</span>
+                                <h6> <a href="#">Freddie Carpenter</a> </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item description -->
+                    <p class="item__description">
+                        Habitant sollicitudin faucibus cursus lectus pulvinar dolor non ultrices eget. Facilisi
+                        lobortisal morbi fringilla urna amet sed ipsum vitae ipsum malesuada. Habitant sollicitudin
+                        faucibus cursus lectus pulvinar dolor non ultrices eget. Facilisi lobortisal morbi fringilla
+                        urna amet sed ipsum
+                    </p>
+                    <!-- item price details -->
+                    <div class="price-details">
+                        <div class="item-info">
+                            <span class="price__heading">Current Bid</span>
+                            <div class="card-price__info">
+                                <h6>4.89 ETH</h6>
+                                <span>= $12.246</span>
+                            </div>
+                        </div>
+                        <div class="item-info item__count-down">
+                            <span class="price__heading">Countdown</span>
+                            <div class="card-price__info">
+                                <h6 id="countdown"></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn__secondary"><i class="fa-solid fa-bag-shopping"></i>
+                        Place a bid </button>
+                    <!-- tabs -->
+                    <div class="item__tabs">
+                        <!-- tabs list -->
+                        <ul class="tabs__nav-list">
+                            <li class="tab__item active" id="tab1" data-tab="1">Bid History</li>
+                            <li class="tab__item" id="tab2" data-tab="2">Info</li>
+                            <li class="tab__item" id="tab3" data-tab="3">Provenance</li>
+                        </ul>
+                        <!-- tabs content -->
+                        <div class="tabs__content">
+                            <!-- tabs content 1 -->
+                            <div class="tab__content active" id="tab_content1" data-tab="1">
+                                <ul class="bid-history__list">
+                                    <li class="bid-history__item">
+                                        <div class="item-info item__owner">
+                                            <!-- item image -->
+                                            <div class="item-owner__pic">
+                                                <img src="images/04_Top Seller/avt-1.jpg" alt="picks card img">
+                                                <div class="check">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
+                                            </div>
+                                            <!-- item info -->
+                                            <div class="item-owner__info">
+                                                <div class="item-info__name">
+                                                    <h6> <a href="#">Mason Woodward </a> </h6>
+                                                    <span> place a bid</span>
+                                                </div>
+                                                <span>8 hours ago</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-price__info">
+                                            <h6>4.89 ETH</h6>
+                                            <span>= $12.246</span>
+                                        </div>
+                                    </li>
+                                    <li class="bid-history__item">
+                                        <div class="item-info item__owner">
+                                            <div class="item-owner__pic">
+                                                <img src="images/04_Top Seller/avt-2.jpg" alt="picks card img">
+                                                <div class="check">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
+                                            </div>
+                                            <div class="item-owner__info">
+                                                <div class="item-info__name">
+                                                    <h6> <a href="#">Mason Woodward </a> </h6>
+                                                    <span> place a bid</span>
+                                                </div>
+                                                <span>8 hours ago</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-price__info">
+                                            <h6>4.89 ETH</h6>
+                                            <span>= $12.246</span>
+                                        </div>
+                                    </li>
+                                    <li class="bid-history__item">
+                                        <div class="item-info item__owner">
+                                            <div class="item-owner__pic">
+                                                <img src="images/04_Top Seller/avt-3.jpg" alt="picks card img">
+                                                <div class="check">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
+                                            </div>
+                                            <div class="item-owner__info">
+                                                <div class="item-info__name">
+                                                    <h6> <a href="#">Mason Woodward </a> </h6>
+                                                    <span> place a bid</span>
+                                                </div>
+                                                <span>8 hours ago</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-price__info">
+                                            <h6>4.89 ETH</h6>
+                                            <span>= $12.246</span>
+                                        </div>
+                                    </li>
+                                    <li class="bid-history__item">
+                                        <div class="item-info item__owner">
+                                            <div class="item-owner__pic">
+                                                <img src="images/04_Top Seller/avt-4.jpg" alt="picks card img">
+                                                <div class="check">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
+                                            </div>
+                                            <div class="item-owner__info">
+                                                <div class="item-info__name">
+                                                    <h6> <a href="#">Mason Woodward </a> </h6>
+                                                    <span> place a bid</span>
+                                                </div>
+                                                <span>8 hours ago</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-price__info">
+                                            <h6>4.89 ETH</h6>
+                                            <span>= $12.246</span>
+                                        </div>
+                                    </li>
+                                    <li class="bid-history__item">
+                                        <div class="item-info item__owner">
+                                            <div class="item-owner__pic">
+                                                <img src="images/04_Top Seller/avt-5.jpg" alt="picks card img">
+                                                <div class="check">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
+                                            </div>
+                                            <div class="item-owner__info">
+                                                <div class="item-info__name">
+                                                    <h6> <a href="#">Mason Woodward </a> </h6>
+                                                    <span> place a bid</span>
+                                                </div>
+                                                <span>8 hours ago</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-price__info">
+                                            <h6>4.89 ETH</h6>
+                                            <span>= $12.246</span>
+                                        </div>
+                                    </li>
+                                    <li class="bid-history__item">
+                                        <div class="item-info item__owner">
+                                            <div class="item-owner__pic">
+                                                <img src="images/04_Top Seller/avt-6.jpg" alt="picks card img">
+                                                <div class="check">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
+                                            </div>
+                                            <div class="item-owner__info">
+                                                <div class="item-info__name">
+                                                    <h6> <a href="#">Mason Woodward </a> </h6>
+                                                    <span> place a bid</span>
+                                                </div>
+                                                <span>8 hours ago</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-price__info">
+                                            <h6>4.89 ETH</h6>
+                                            <span>= $12.246</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- tabs content 2 -->
+                            <div class="tab__content" id="tab_content2" data-tab="2">
+                                <ul class="bid-history__list">
+                                    <li class="bid-history__item">
+                                        <div class="item-info item__owner">
+                                            <!-- item image -->
+                                            <div class="item-owner__pic">
+                                                <img src="images/04_Top Seller/avt-1.jpg" alt="picks card img">
+                                                <div class="check">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
+                                            </div>
+                                            <!-- item info -->
+                                            <div class="item-owner__info">
+                                                <div class="item-info__name">
+                                                    <h6> <a href="#">Mason Woodward </a> </h6>
+                                                    <span> place a bid</span>
+                                                </div>
+                                                <span>8 hours ago</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-price__info">
+                                            <h6>4.89 ETH</h6>
+                                            <span>= $12.246</span>
+                                        </div>
+                                    </li>
+                                    <li class="bid-history__item">
+                                        <div class="item-info item__owner">
+                                            <div class="item-owner__pic">
+                                                <img src="images/04_Top Seller/avt-2.jpg" alt="picks card img">
+                                                <div class="check">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
+                                            </div>
+                                            <div class="item-owner__info">
+                                                <div class="item-info__name">
+                                                    <h6> <a href="#">Mason Woodward </a> </h6>
+                                                    <span> place a bid</span>
+                                                </div>
+                                                <span>8 hours ago</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-price__info">
+                                            <h6>4.89 ETH</h6>
+                                            <span>= $12.246</span>
+                                        </div>
+                                    </li>
+                                    <li class="bid-history__item">
+                                        <div class="item-info item__owner">
+                                            <div class="item-owner__pic">
+                                                <img src="images/04_Top Seller/avt-3.jpg" alt="picks card img">
+                                                <div class="check">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
+                                            </div>
+                                            <div class="item-owner__info">
+                                                <div class="item-info__name">
+                                                    <h6> <a href="#">Mason Woodward </a> </h6>
+                                                    <span> place a bid</span>
+                                                </div>
+                                                <span>8 hours ago</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-price__info">
+                                            <h6>4.89 ETH</h6>
+                                            <span>= $12.246</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- tabs content 3 -->
+                            <div class="tab__content" id="tab_content3" data-tab="3">
+                                <ul class="bid-history__list">
+                                    <li class="bid-history__item">
+                                        <div class="item-info item__owner">
+                                            <!-- item image -->
+                                            <div class="item-owner__pic">
+                                                <img src="images/04_Top Seller/avt-1.jpg" alt="picks card img">
+                                                <div class="check">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
+                                            </div>
+                                            <!-- item info -->
+                                            <div class="item-owner__info">
+                                                <div class="item-info__name">
+                                                    <h6> <a href="#">Mason Woodward </a> </h6>
+                                                    <span> place a bid</span>
+                                                </div>
+                                                <span>8 hours ago</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-price__info">
+                                            <h6>4.89 ETH</h6>
+                                            <span>= $12.246</span>
+                                        </div>
+                                    </li>
+                                    <li class="bid-history__item">
+                                        <div class="item-info item__owner">
+                                            <div class="item-owner__pic">
+                                                <img src="images/04_Top Seller/avt-2.jpg" alt="picks card img">
+                                                <div class="check">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
+                                            </div>
+                                            <div class="item-owner__info">
+                                                <div class="item-info__name">
+                                                    <h6> <a href="#">Mason Woodward </a> </h6>
+                                                    <span> place a bid</span>
+                                                </div>
+                                                <span>8 hours ago</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-price__info">
+                                            <h6>4.89 ETH</h6>
+                                            <span>= $12.246</span>
+                                        </div>
+                                    </li>
+                                    <li class="bid-history__item">
+                                        <div class="item-info item__owner">
+                                            <div class="item-owner__pic">
+                                                <img src="images/04_Top Seller/avt-3.jpg" alt="picks card img">
+                                                <div class="check">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
+                                            </div>
+                                            <div class="item-owner__info">
+                                                <div class="item-info__name">
+                                                    <h6> <a href="#">Mason Woodward </a> </h6>
+                                                    <span> place a bid</span>
+                                                </div>
+                                                <span>8 hours ago</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-price__info">
+                                            <h6>4.89 ETH</h6>
+                                            <span>= $12.246</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- live-auctions -->
+        <section class="live-auctions">
+            <div class="container">
+                <div class="flex">
+                    <div class="col section__header">
+                        <h2>Live Auctions</h2>
+                        <a href="#">EXPLORE MORE</a>
+                    </div>
+                </div>
+                <div class="flex">
+                    <!-- card 1 -->
+                    <div class="col">
+                        <div class="card live-auctions__card">
+                            <div class="card__img">
+                                <a href="#">
+                                    <img src="images/03_Live Auctions/image-box-11.jpg" alt="Live Auctions">
+                                </a>
+                                <div class="card__countdown">
+                                    <img src="images/icon.svg" alt="Live Auctions icon">
+                                    <span>15 : 18 : 12 : 17</span>
+                                </div>
+                                <div class="card__btn">
+                                    <button class="btn btn__primary">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        Place Bid
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <div class="card-content__header">
+                                    <h5>"Hamlet Contemplates Yorick's...</h5>
+                                    <div class="card-header__data">
+                                        <div class="card__creator">
+                                            <div class="card-creator__pic">
+                                                <img src="images/03_Live Auctions/little-img1.svg"
+                                                    alt="Live Auctions avatar">
+                                            </div>
+                                            <div class="card-creator__data">
+                                                <span>Creator</span>
+                                                <h6>SalvadorDali</h6>
+                                            </div>
+                                        </div>
+                                        <div class="card__bsc-tag">BSC</div>
+                                    </div>
+                                </div>
+                                <div class="card-content__footer">
+                                    <div class="card-footer__price">
+                                        <span>Current Bid</span>
+                                        <div class="card-price__info">
+                                            <h6>4.89 ETH</h6>
+                                            <span>= $12.246</span>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="card-btn__like">
+                                        <i class="mdi mdi-cards-heart-outline"></i>
+                                        100</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="col">
+                        <div class="card live-auctions__card">
+                            <div class="card__img">
+                                <a href="#">
+                                    <img src="images/03_Live Auctions/image-box-21.jpg" alt="Live Auctions">
+                                </a>
+                                <div class="card__countdown">
+                                    <img src="images/icon.svg" alt="Live Auctions icon">
+                                    <span>15 : 18 : 12 : 17</span>
+                                </div>
+                                <div class="card__btn">
+                                    <button class="btn btn__primary">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        Place Bid
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <div class="card-content__header">
+                                    <h5>"Hamlet Contemplates Yorick's...</h5>
+                                    <div class="card-header__data">
+                                        <div class="card__creator">
+                                            <div class="card-creator__pic">
+                                                <img src="images/03_Live Auctions/little-img2.svg"
+                                                    alt="Live Auctions avatar">
+                                            </div>
+                                            <div class="card-creator__data">
+                                                <span>Creator</span>
+                                                <h6>SalvadorDali</h6>
+                                            </div>
+                                        </div>
+                                        <div class="card__bsc-tag">BSC</div>
+                                    </div>
+                                </div>
+                                <div class="card-content__footer">
+                                    <div class="card-footer__price">
+                                        <span>Current Bid</span>
+                                        <div class="card-price__info">
+                                            <h6>4.89 ETH</h6>
+                                            <span>= $12.246</span>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="card-btn__like">
+                                        <i class="mdi mdi-cards-heart-outline"></i>
+                                        100</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="col">
+                        <div class="card live-auctions__card">
+                            <div class="card__img">
+                                <a href="#">
+                                    <img src="images/03_Live Auctions/card-item8.jpg" alt="Live Auctions">
+                                </a>
+                                <div class="card__countdown">
+                                    <img src="images/icon.svg" alt="Live Auctions icon">
+                                    <span>15 : 18 : 12 : 17</span>
+                                </div>
+                                <div class="card__btn">
+                                    <button class="btn btn__primary">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        Place Bid
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <div class="card-content__header">
+                                    <h5>"Hamlet Contemplates Yorick's...</h5>
+                                    <div class="card-header__data">
+                                        <div class="card__creator">
+                                            <div class="card-creator__pic">
+                                                <img src="images/03_Live Auctions/little-img3.svg" alt="Live Auctions">
+                                            </div>
+                                            <div class="card-creator__data">
+                                                <span>Creator</span>
+                                                <h6>SalvadorDali</h6>
+                                            </div>
+                                        </div>
+                                        <div class="card__bsc-tag">BSC</div>
+                                    </div>
+                                </div>
+                                <div class="card-content__footer">
+                                    <div class="card-footer__price">
+                                        <span>Current Bid</span>
+                                        <div class="card-price__info">
+                                            <h6>4.89 ETH</h6>
+                                            <span>= $12.246</span>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="card-btn__like">
+                                        <i class="mdi mdi-cards-heart-outline"></i>
+                                        100</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 4 -->
+                    <div class="col">
+                        <div class="card live-auctions__card">
+                            <div class="card__img">
+                                <a href="#">
+                                    <img src="images/03_Live Auctions/image-box-10.jpg" alt="Live Auctions">
+                                </a>
+                                <div class="card__countdown">
+                                    <img src="images/icon.svg" alt="Live Auctions">
+                                    <span>15 : 18 : 12 : 17</span>
+                                </div>
+                                <div class="card__btn">
+                                    <button class="btn btn__primary">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        Place Bid
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <div class="card-content__header">
+                                    <h5>"Hamlet Contemplates Yorick's...</h5>
+                                    <div class="card-header__data">
+                                        <div class="card__creator">
+                                            <div class="card-creator__pic">
+                                                <img src="images/03_Live Auctions/little-img4.svg" alt="Live Auctions">
+                                            </div>
+                                            <div class="card-creator__data">
+                                                <span>Creator</span>
+                                                <h6>SalvadorDali</h6>
+                                            </div>
+                                        </div>
+                                        <div class="card__bsc-tag">BSC</div>
+                                    </div>
+                                </div>
+                                <div class="card-content__footer">
+                                    <div class="card-footer__price">
+                                        <span>Current Bid</span>
+                                        <div class="card-price__info">
+                                            <h6>4.89 ETH</h6>
+                                            <span>= $12.246</span>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="card-btn__like">
+                                        <i class="mdi mdi-cards-heart-outline"></i>
+                                        100</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex live-auctions__pagination">
+                    <div class="pagination__list">
+                        <div class="pagination_btn"></div>
+                        <div class="pagination_btn"></div>
+                        <div class="pagination_btn"></div>
+                        <div class="pagination_btn"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <button id="back-to-top" class="back-to-top"><i class="fa-solid fa-angle-up"></i></button>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="col footer__item">
+                <div class="footer__logo">
+                    <img src="images/01_header/logo_dark.png" alt="Footer logo img">
+                </div>
+                <p>Lorem ipsum dolor sit amet,consectetur adipisicing elit. Quis non, fugit totam vel laboriosam vitae.
+                </p>
+            </div>
+            <div class="col footer__item">
+                <h4>My Account</h4>
+                <ul class="footer__navbar">
+                    <li><a href="#">Authors</a></li>
+                    <li><a href="#">Collection</a></li>
+                    <li><a href="#">Author Profile</a></li>
+                    <li><a href="#">Create Item</a></li>
+                </ul>
+            </div>
+            <div class="col footer__item">
+                <h4>Resources</h4>
+                <ul class="footer__navbar">
+                    <li><a href="#">Help & Support</a></li>
+                    <li><a href="#">Live Auctions</a></li>
+                    <li><a href="#">Item Details</a></li>
+                    <li><a href="#">Activity</a></li>
+                </ul>
+            </div>
+            <div class="col footer__item">
+                <h4>Company</h4>
+                <ul class="footer__navbar">
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Our Blog</a></li>
+                    <li><a href="#">Activity</a></li>
+                </ul>
+            </div>
+            <div class="col footer__item">
+                <h4>Subscribe Us</h4>
+                <form class="footer__newsletter-form">
+                    <div class="footer__newsletter-inner">
+                        <input type="email" placeholder="info@yourgmail.com">
+                        <button class="btn btn__primary" type="button">
+                            <i class="mdi mdi-send"></i>
+                        </button>
+                    </div>
+                </form>
+                <div class="footer__socials">
+                    <a class="footer__socials-list" href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="footer__socials-list" href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="footer__socials-list" href="#"><i class="fa-solid fa-paper-plane"></i></a>
+                    <a class="footer__socials-list" href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a class="footer__socials-list" href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a class="footer__socials-list" href="#"><i class="fa-brands fa-discord"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/pages/item-details.js"></script>
+</body>
+
+</html>

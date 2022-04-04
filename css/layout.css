@@ -133,6 +133,7 @@ section {
   font-weight: 700;
   display: flex;
   align-items: center;
+  justify-content: center;
   z-index: 1;
 }
 .btn__secondary:hover {
@@ -182,18 +183,8 @@ section {
   padding-bottom: 0.3rem;
   background: #fd4766;
   background: #fd4766;
-  background: linear-gradient(
-    120deg,
-    #3338e9 20.69%,
-    #9b2e9d 50.19%,
-    #fd4766 79.69%
-  );
-  background: linear-gradient(
-    120deg,
-    #3338e9 20.69%,
-    #9b2e9d 50.19%,
-    #fd4766 79.69%
-  );
+  background: linear-gradient(216.56deg, #e250e5 5.32%, #4b50e6 94.32%);
+  background: linear-gradient(216.56deg, #e250e5 5.32%, #4b50e6 94.32%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -207,18 +198,8 @@ section {
   left: 0;
   width: 40%;
   height: 1px;
-  background: linear-gradient(
-    120deg,
-    #3338e9 20.69%,
-    #9b2e9d 50.19%,
-    #fd4766 79.69%
-  );
-  background: linear-gradient(
-    120deg,
-    #3338e9 20.69%,
-    #9b2e9d 50.19%,
-    #fd4766 79.69%
-  );
+  background: linear-gradient(216.56deg, #e250e5 5.32%, #4b50e6 94.32%);
+  background: linear-gradient(216.56deg, #e250e5 5.32%, #4b50e6 94.32%);
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
