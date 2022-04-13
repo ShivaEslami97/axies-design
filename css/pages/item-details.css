@@ -124,10 +124,62 @@
   background-color: var(--primary-color);
   text-align: center;
   border-radius: 10rem;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  -ms-border-radius: 10rem;
+  -o-border-radius: 10rem;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
+  position: relative;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.item__more:hover,
+.item__share:hover {
+  background: linear-gradient(216.56deg, #7c127e 5.32%, #3e43d5 94.32%);
+}
+.item__share::after,
+.item__more::after {
+  width: 3.6rem;
+  height: 3.6rem;
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  border-radius: 10rem;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  -ms-border-radius: 10rem;
+  -o-border-radius: 10rem;
+  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  border: 1px solid var(--primary-color);
+}
+
+.item__share:hover::after,
+.item__more:hover::after {
+  transform: scale(1.25);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -ms-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  border: 1px solid var(--main-color);
 }
 .item__owners,
 .price-details {

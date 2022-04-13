@@ -305,3 +305,11 @@ section {
     transform: rotate(360deg);
   }
 }
+/**** media query  *****/
+@media only screen and (max-width: 992px) {
+  .container {
+    width: 1467px;
+    max-width: 100%;
+    padding-inline: 1.5em;
+  }
+}

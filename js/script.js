@@ -46,6 +46,8 @@ const menu = document.querySelector('.navbar');
 const menuTrigger = document.querySelector('.menu-btn');
 const menuClosed = menu.querySelector('.menu-mobile-close');
 const menuItem = menu.querySelector('.nav__list');
+const menuArrow = menu.querySelector('.menu-mobile-arrow');
+const menuOverlay = document.querySelector('.overlay');
 let subMenu;
 
 menuItem.addEventListener('click', (e) => {
@@ -61,8 +63,15 @@ menuTrigger.addEventListener('click', () => {
 menuClosed.addEventListener('click', () => {
     toggleMenu();
 });
+menuOverlay.addEventListener('click', () => {
+    toggleMenu();
+});
+menuArrow.addEventListener('click', () => {
+    hideSubMenu();
+});
 function toggleMenu() {
     menu.classList.toggle('active');
+    menuOverlay.classList.toggle('active');
 }
 function showSubMenu(hasChildren) {
     subMenu = hasChildren.querySelector('.nav__child');
@@ -72,3 +81,23 @@ function showSubMenu(hasChildren) {
     menu.querySelector('.menu-mobile-title').innerHTML = menuTitle;
     menu.querySelector('.menu-mobile-header').classList.add('active');
 }
+function hideSubMenu() {
+    subMenu.style.animation = "slide-toRight 0.5s ease forwards";
+    setTimeout(() => {
+        subMenu.classList.remove("active");
+    }, 300);
+    menu.querySelector(".menu-mobile-title").innerHTML = "";
+    menu.querySelector(".menu-mobile-header").classList.remove("active");
+}
+
+window.onresize = function () {
+    if (this.innerWidth > 1199) {
+        document.querySelector('#btn_wallet').innerHTML = '<i class="fa-solid fa-wallet"></i> Wallet connect';
+        if (menu.classList.contains("active")) {
+            toggleMenu();
+        }
+    }
+    else {
+        document.querySelector('#btn_wallet').innerHTML = '<i class="fa-solid fa-wallet"></i>';
+    }
+};
