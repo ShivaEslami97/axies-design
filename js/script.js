@@ -89,17 +89,22 @@ function hideSubMenu() {
     menu.querySelector(".menu-mobile-title").innerHTML = "";
     menu.querySelector(".menu-mobile-header").classList.remove("active");
 }
-
+let wallet = document.querySelector('#btn_wallet');
 function checkMediaQuery() {
     // Check if the media query is true
     if (window.innerWidth > 1199) {
-        document.querySelector('#btn_wallet').innerHTML = '<i class="fa-solid fa-wallet"></i> Wallet connect';
+        if (wallet) {
+            wallet.innerHTML = '<i class="fa-solid fa-wallet"></i> Wallet connect';
+        }
+
         if (menu.classList.contains("active")) {
             toggleMenu();
         }
     }
     else {
-        document.querySelector('#btn_wallet').innerHTML = '<i class="fa-solid fa-wallet"></i>';
+        if (wallet) {
+            wallet.innerHTML = '<i class="fa-solid fa-wallet"></i>';
+        }
     }
 }
 window.addEventListener('resize', checkMediaQuery);

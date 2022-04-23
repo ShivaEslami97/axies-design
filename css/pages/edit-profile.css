@@ -157,6 +157,17 @@
   -o-border-radius: 0.8rem;
   font-size: 1.4rem;
   color: var(--primary-color-3);
+  transition: border-color 0.15s ease-in-out;
+  -webkit-transition: border-color 0.15s ease-in-out;
+  -moz-transition: border-color 0.15s ease-in-out;
+  -ms-transition: border-color 0.15s ease-in-out;
+  -o-transition: border-color 0.15s ease-in-out;
+}
+.profile__input-field input:focus,
+.profile__input-field input:active,
+.profile__input-field textarea:focus,
+.profile__input-field textarea:active {
+  border: 1px solid var(--main-color);
 }
 .form-input i {
   position: absolute;
@@ -166,6 +177,9 @@
   font-size: 1.3rem;
   color: var(--primary-color-3);
 }
+.profile__input-field input:focus + i {
+  color: var(--main-color);
+}
 .profile__account-social {
   padding-left: 3rem;
 }
@@ -173,6 +187,21 @@
   font-size: 1.4rem;
   padding: 1.2rem 3.5rem;
   background-color: var(--main-color);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.profile__input-field .btn__primary:hover {
+  transform: translateY(-0.3rem);
+  -webkit-transform: translateY(-0.3rem);
+  -moz-transform: translateY(-0.3rem);
+  -ms-transform: translateY(-0.3rem);
+  -o-transform: translateY(-0.3rem);
 }
 .profile__input-field .btn__primary i {
   margin-right: 0.3rem;
