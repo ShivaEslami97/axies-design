@@ -7,7 +7,7 @@
   --primary-color: #343444;
   --primary-color-1: #ebebeb;
   --primary-color-2: #030303;
-  --primary-color-3: #ffffff;
+  --primary-color-3: #878a99;
   --bg-footer: #0d0d11;
   --bg-color-1: #14141f;
   --primary-color-4: #46a433;
@@ -53,6 +53,9 @@ a {
 }
 section {
   padding: 5.7em 0;
+}
+textarea {
+  resize: none;
 }
 /* ------------------- */
 /* Utility classes     */
@@ -101,8 +104,26 @@ section {
 .justify-content-center {
   justify-content: center;
 }
+.justify-content-between {
+  justify-content: space-between;
+}
 .position-absolute {
   position: absolute;
+}
+.gap-1 {
+  gap: 1rem;
+}
+.gap-15 {
+  gap: 1.5rem;
+}
+.gap-2 {
+  gap: 2rem;
+}
+.gap-25 {
+  gap: 2.5rem;
+}
+.gap-3 {
+  gap: 3rem;
 }
 /* ------------------- */
 /* Compontents         */

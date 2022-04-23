@@ -24,7 +24,7 @@
   }
   /**** header and menu  *****/
   .header {
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
   }
   .wrapper {
     -webkit-box-pack: justify;

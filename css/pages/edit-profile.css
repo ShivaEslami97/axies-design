@@ -4,6 +4,11 @@
 .profile__media {
   width: 27%;
 }
+.profile__content {
+  width: 67%;
+  flex-direction: column;
+  gap: 4rem;
+}
 .profile__pic {
   margin-bottom: 2rem;
 }
@@ -14,9 +19,6 @@
   -moz-border-radius: 2rem;
   -ms-border-radius: 2rem;
   -o-border-radius: 2rem;
-}
-.profile__content {
-  width: 62%;
 }
 .profile_card {
   border-radius: 2rem;
@@ -29,4 +31,121 @@
 .profile-pic__actions {
   flex-direction: column;
   gap: 1.5rem;
+}
+.cover-upload__box {
+  padding: 1.8rem 3rem;
+  flex-basis: 30rem;
+  border: 1px solid rgba(216, 202, 202, 0.14);
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -ms-border-radius: 0.8rem;
+  -o-border-radius: 0.8rem;
+}
+.cover-upload__image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -ms-border-radius: 0.8rem;
+  -o-border-radius: 0.8rem;
+}
+.cover-upload__image--one {
+  background: linear-gradient(216.56deg, #e250e5 5.32%, #4b50e6 94.32%);
+  padding: 0.2rem;
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -ms-border-radius: 0.8rem;
+}
+.profile__acc-info {
+}
+.profile__heading {
+  color: var(--white-color);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.profile__account-info,
+.profile__account-social {
+  width: 42%;
+}
+.form-input {
+  position: relative;
+  margin: 0.8rem 0 2rem;
+}
+.profile__input-field {
+  margin-bottom: 3rem;
+}
+.profile__input-field label {
+  color: var(--white-color);
+  font-size: 1.5rem;
+}
+.profile__input-field input,
+.profile__input-field textarea {
+  display: block;
+  width: 100%;
+  padding: 1.5rem 3.1rem;
+  outline: 0;
+  border: 1px solid rgba(216, 202, 202, 0.14);
+  background-color: transparent;
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -ms-border-radius: 0.8rem;
+  -o-border-radius: 0.8rem;
+  font-size: 1.4rem;
+  color: var(--primary-color-3);
+}
+.form-input i {
+  position: absolute;
+  font-size: 1rem;
+  left: 1rem;
+  top: calc(50% - 0.49em);
+  font-size: 1.3rem;
+  color: var(--primary-color-3);
+}
+.profile__account-social {
+  padding-left: 3rem;
+}
+.profile__input-field .btn__primary {
+  font-size: 1.4rem;
+  padding: 1.2rem 3.5rem;
+  background-color: var(--main-color);
+}
+.profile__input-field .btn__primary i {
+  margin-right: 0.3rem;
+}
+
+@media only screen and (max-width: 991px) {
+  .profile__media {
+    width: 100%;
+  }
+  .profile__content {
+    width: 100%;
+  }
+  .profile .container {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 698px) {
+  .profile__account-info,
+  .profile__account-social {
+    width: 100%;
+  }
+  .profile__account {
+    flex-wrap: wrap;
+  }
+  .profile-cover__upload {
+    flex-wrap: wrap;
+  }
+  .cover-upload__box {
+    flex-basis: 46rem;
+  }
+  .cover-upload__image {
+    width: 100%;
+  }
+  .profile__account-social {
+    padding-left: 0rem;
+  }
 }
