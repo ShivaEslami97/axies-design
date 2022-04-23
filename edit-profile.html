@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/all.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/dropzone.min.css" />
     <link rel="stylesheet" type="text/css" href="css/layout.css" />
     <link rel="stylesheet" type="text/css" href="css/header.css" />
     <link rel="stylesheet" type="text/css" href="css/pages/page-title.css" />
@@ -137,16 +138,18 @@
                                 </form>
                             </div>
                         </div>
-                        <a href="#" id="btn_wallet" class="btn btn__primary">
-                            <i class="fa-solid fa-wallet"></i>
-                            Wallet connect
+                        <a href="#" id="btn_notification" class="header__btn">
+                            <i class="fa-solid fa-bell"></i>
+                        </a>
+                        <a href="#" id="btn_profileavatar" class="header__btn">
+                            <img src="images/04_Top Seller/avt-5.jpg" alt="user profile">
                         </a>
                     </div>
                     <div class="theme__switcher">
-                        <a href="#" class="btn__login">
+                        <a href="#" class="btn__login header__btn">
                             <i class="fa-solid fa-user"></i>
                         </a>
-                        <a href="#" class="night">
+                        <a href="#" class="night header__btn">
                             <i class="fa-solid fa-moon"></i>
                         </a>
                     </div>
@@ -206,13 +209,21 @@
             <div class="container flex gap-3 justify-content-between">
                 <div class="profile__media">
                     <div class="profile_card">
-                        <div class="profile__pic">
-                            <img src="images/profile/avatar.jpg" alt="">
+                        <div class="profile__pic dropzone-click-target">
+                            <img class="dropzone-previews profile_image" src="images/profile/avatar.jpg" alt="">
+                            <div class="profile-pic__info">
+                                <i class="fa-solid fa-cloud-arrow-up"></i>
+                                <h4>Drag and drop image here</h4>
+                            </div>
                         </div>
                         <div class="profile-pic__actions flex">
-                            <button class="btn btn__secondary">
-                                Upload New Photo
-                            </button>
+                            <div class="dropzone  dropzone-click-target" id="ProfileUpload">
+                                <div class="dz-default dz-message">
+                                    <button class="btn btn__secondary">
+                                        Upload New Photo
+                                    </button>
+                                </div>
+                            </div>
                             <button class="btn btn__secondary">
                                 Delete
                             </button>
@@ -378,6 +389,8 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/dropzone.min.js"></script>
+    <script src="js/pages/Edit-profile.js"></script>
 </body>
 
 </html>

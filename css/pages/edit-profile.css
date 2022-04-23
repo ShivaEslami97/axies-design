@@ -11,6 +11,8 @@
 }
 .profile__pic {
   margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
 }
 .profile__pic img {
   width: 100%;
@@ -19,6 +21,65 @@
   -moz-border-radius: 2rem;
   -ms-border-radius: 2rem;
   -o-border-radius: 2rem;
+}
+.profile-pic__info {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+  background: rgba(50, 100, 245, 0.63);
+  background: -moz-linear-gradient(
+    left,
+    rgba(50, 100, 245, 0.61) 2%,
+    rgba(114, 2, 187, 0.6) 82%
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(50, 100, 245, 0.61) 2%,
+    rgba(114, 2, 187, 0.6) 82%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(50, 100, 245, 0.61) 2%,
+    rgba(114, 2, 187, 0.6) 82%
+  );
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  transform: scale(0.4);
+  opacity: 0;
+}
+.profile-pic__info h4,
+.profile-pic__info i {
+  transform: scale(1.3);
+  opacity: 0;
+  color: var(--white-color);
+  font-size: 1.7rem;
+}
+.profile__pic:hover h4,
+.profile__pic:hover i {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  transition-delay: 0.45s;
+  transform: scale(1);
+  opacity: 1;
+}
+.profile__pic:hover .profile-pic__info {
+  transition-property: all;
+  transition-duration: 0.4s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+  transform: scale(1);
+  opacity: 1;
 }
 .profile_card {
   border-radius: 2rem;
@@ -116,7 +177,29 @@
 .profile__input-field .btn__primary i {
   margin-right: 0.3rem;
 }
-
+.header__btn img {
+  border-radius: 1rem;
+}
+/* dropzone customize */
+.dropzone {
+  min-height: 50px;
+  border: none;
+  background: transparent;
+  padding: 0px 0px;
+}
+.dropzone .dz-message {
+  margin: 0em 0;
+}
+.dropzone.dz-started .dz-message {
+  display: block;
+}
+.dropzone .dz-message .btn {
+  width: 100%;
+}
+.dropzone-click-target {
+  cursor: pointer;
+}
+/* Responive */
 @media only screen and (max-width: 991px) {
   .profile__media {
     width: 100%;

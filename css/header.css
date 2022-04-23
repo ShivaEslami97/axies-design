@@ -269,12 +269,16 @@ header {
   align-items: center;
   margin-left: 4rem;
 }
-.theme__switcher a {
+.header__btn {
   background: var(--primary-color);
   border-radius: 1rem;
   margin-left: 1rem;
   width: 4rem;
   height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
 }
 .night,
 .btn__login {
