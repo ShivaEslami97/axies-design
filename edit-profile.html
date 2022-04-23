@@ -209,25 +209,26 @@
             <div class="container flex gap-3 justify-content-between">
                 <div class="profile__media">
                     <div class="profile_card">
-                        <div class="profile__pic dropzone-click-target">
-                            <img class="dropzone-previews profile_image" src="images/profile/avatar.jpg" alt="">
-                            <div class="profile-pic__info">
-                                <i class="fa-solid fa-cloud-arrow-up"></i>
-                                <h4>Drag and drop image here</h4>
+                        <div class="profile__pic dropzone dropzone-click-target" id="ProfileUpload">
+                            <div class="dz-default dz-message">
+                                <img class="dropzone-previews profile_image" src="images/profile/avatar.jpg" alt="">
+                                <div class="profile-pic__info">
+                                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                                    <h4>Click here to upload image</h4>
+                                </div>
                             </div>
                         </div>
                         <div class="profile-pic__actions flex">
-                            <div class="dropzone  dropzone-click-target" id="ProfileUpload">
-                                <div class="dz-default dz-message">
-                                    <button class="btn btn__secondary">
-                                        Upload New Photo
-                                    </button>
-                                </div>
+                            <div class="dropzone-click-target">
+                                <button class="btn btn__secondary">
+                                    Upload New Photo
+                                </button>
                             </div>
                             <button class="btn btn__secondary">
                                 Delete
                             </button>
                         </div>
+
                     </div>
                 </div>
 
