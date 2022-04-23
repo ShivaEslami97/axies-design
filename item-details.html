@@ -11,9 +11,11 @@
     <link rel="stylesheet" type="text/css" href="css/header.css" />
     <link rel="stylesheet" type="text/css" href="css/live-auctions.css" />
     <link rel="stylesheet" type="text/css" href="css/top-seller.css" />
+    <link rel="stylesheet" type="text/css" href="css/pages/page-title.css" />
     <link rel="stylesheet" type="text/css" href="css/pages/item-details.css" />
     <link rel="stylesheet" type="text/css" href="css/footer.css" />
     <link rel="stylesheet" type="text/css" href="css/fixed-sidebar.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
 </head>
 
 <body>
@@ -28,6 +30,7 @@
                     <img src="images/01_header/logo_dark.png" alt="Axies logo image">
                 </div>
                 <div class="header__item-center">
+                    <div class="overlay"></div>
                     <nav class="navbar">
                         <div class="menu-mobile-header">
                             <button type="button" class="menu-mobile-arrow">
@@ -91,12 +94,8 @@
                                     <i class="fa-solid fa-chevron-down"></i>
                                 </a>
                                 <ul class="nav__child is-hidden">
-                                    <li><a href="#">Pages 1 </a></li>
-                                    <li><a href="#">Pages 2 </a></li>
-                                    <li><a href="#">Pages 3 </a></li>
-                                    <li><a href="#">Pages 4 </a></li>
-                                    <li><a href="#">Pages 4 </a></li>
-                                    <li><a href="#">Pages 4 </a></li>
+                                    <li><a href="item-details.html"> Item Details </a></li>
+                                    <li><a href="#"> Edit Profile </a></li>
                                 </ul>
                             </li>
                             <li class="nav__item"><a class="nav__link" href="#">Contact
@@ -138,14 +137,14 @@
                                 </form>
                             </div>
                         </div>
-                        <a href="login.html" class="btn btn__primary">
-                            <i class="fa-solid fa-arrow-right-to-bracket"></i>
-                            sign in
+                        <a href="#" id="btn_wallet" class="btn btn__primary">
+                            <i class="fa-solid fa-wallet"></i>
+                            Wallet connect
                         </a>
                     </div>
                     <div class="theme__switcher">
-                        <a href="#" class="day">
-                            <i class="fa-solid fa-sun"></i>
+                        <a href="#" class="btn__login">
+                            <i class="fa-solid fa-user"></i>
                         </a>
                         <a href="#" class="night">
                             <i class="fa-solid fa-moon"></i>

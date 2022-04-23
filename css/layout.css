@@ -67,6 +67,10 @@ section {
 
   /* gap: var(--gap, 1rem); */
 }
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
 .d-block {
   display: block;
 }
@@ -303,13 +307,5 @@ section {
     -webkit-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     transform: rotate(360deg);
-  }
-}
-/**** media query  *****/
-@media only screen and (max-width: 992px) {
-  .container {
-    width: 1467px;
-    max-width: 100%;
-    padding-inline: 1.5em;
   }
 }

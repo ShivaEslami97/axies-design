@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Edit Profile</title>
+    <link rel="shortcut icon" href="images/01_header/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/font.css" />
+    <link rel="stylesheet" type="text/css" href="css/all.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" href="css/pages/page-title.css" />
+    <link rel="stylesheet" type="text/css" href="css/pages/edit-profile.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="css/fixed-sidebar.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+</head>
+
+<body>
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+    <!-- header -->
+    <header class="header" id="header">
+        <div class="inner_header">
+            <div class="container wrapper">
+                <div class="header__item-left site-logo">
+                    <img src="images/01_header/logo_dark.png" alt="Axies logo image">
+                </div>
+                <div class="header__item-center">
+                    <div class="overlay"></div>
+                    <nav class="navbar">
+                        <div class="menu-mobile-header">
+                            <button type="button" class="menu-mobile-arrow">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </button>
+                            <div class="menu-mobile-title"></div>
+                            <button type="button" class="menu-mobile-close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                        <ul class="nav__list">
+                            <li class="nav__item has-children">
+                                <a class="nav__link" href="#">Home
+                                    <i class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="nav__child is-hidden">
+                                    <li><a href="#">Home 1 </a></li>
+                                    <li><a href="#">Home 2 </a></li>
+                                    <li><a href="#">Home 3 </a></li>
+                                    <li><a href="#">Home 4 </a></li>
+                                    <li><a href="#">Home 4 </a></li>
+                                    <li><a href="#">Home 4 </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__item has-children"><a class="nav__link" href="#">Explore
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul class="nav__child is-hidden">
+                                    <li><a href="#">Explore 1 </a></li>
+                                    <li><a href="#">Explore 2 </a></li>
+                                    <li><a href="#">Explore 3 </a></li>
+                                    <li><a href="#">Explore 4 </a></li>
+                                    <li><a href="#">Explore 4 </a></li>
+                                    <li><a href="#">Explore 4 </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__item has-children"><a class="nav__link" href="#">Activity
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul class="nav__child is-hidden">
+                                    <li><a href="#">Activity 1 </a></li>
+                                    <li><a href="#">Activity 2 </a></li>
+                                    <li><a href="#">Activity 3 </a></li>
+                                    <li><a href="#">Activity 4 </a></li>
+                                    <li><a href="#">Activity 4 </a></li>
+                                    <li><a href="#">Activity 4 </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__item"><a class="nav__link" href="#">Community
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul class="nav__child is-hidden">
+                                    <li><a href="#">Community 1 </a></li>
+                                    <li><a href="#">Community 2 </a></li>
+                                    <li><a href="#">Community 3 </a></li>
+                                    <li><a href="#">Community 4 </a></li>
+                                    <li><a href="#">Community 4 </a></li>
+                                    <li><a href="#">Community 4 </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__item"><a class="nav__link" href="#">Pages
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul class="nav__child is-hidden">
+                                    <li><a href="item-details.html"> Item Details </a></li>
+                                    <li><a href="#"> Edit Profile </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__item"><a class="nav__link" href="#">Contact
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul class="nav__child is-hidden">
+                                    <li><a href="#">Contact 1 </a></li>
+                                    <li><a href="#">Contact 2 </a></li>
+                                    <li><a href="#">Contact 3 </a></li>
+                                    <li><a href="#">Contact 4 </a></li>
+                                    <li><a href="#">Contact 4 </a></li>
+                                    <li><a href="#">Contact 4 </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="header__item-right">
+                    <div class="search__box">
+                        <div class="header__search">
+                            <a class="search__link" href="#">
+                                <svg width="22" height="22" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z"
+                                        stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M17.5 17.5L13.875 13.875" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <div class="search__open-box">
+                                <form class="search__form">
+                                    <input type="text" class="search__input" placeholder="Search...">
+                                    <button type="submit" class="search__submit">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <a href="#" id="btn_wallet" class="btn btn__primary">
+                            <i class="fa-solid fa-wallet"></i>
+                            Wallet connect
+                        </a>
+                    </div>
+                    <div class="theme__switcher">
+                        <a href="#" class="btn__login">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                        <a href="#" class="night">
+                            <i class="fa-solid fa-moon"></i>
+                        </a>
+                    </div>
+                    <div class="menu-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- fixed sidebar menu -->
+    <div class="sticky__social">
+        <ul class="social__list">
+            <li class="social__item  social--telegram"><a class="social__link" href="#">
+                    <i class="fa-brands fa-telegram"></i>
+                </a></li>
+            <li class="social__item  social--facebook"><a class="social__link" href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a></li>
+            <li class="social__item"><a class="social__link social--telegram" href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                </a></li>
+            <li class="social__item"><a class="social__link social--github" href="#">
+                    <i class="fa-brands fa-github"></i>
+                </a></li>
+            <li class="social__item"><a class="social__link social--instagram" href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a></li>
+            <li class="social__item"><a class="social__link social--linkedin" href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a></li>
+            <li class="social__item"><a class="social__link social--dribbble" href="#">
+                    <i class="fa-brands fa-dribbble"></i>
+                </a></li>
+        </ul>
+    </div>
+    <!-- main -->
+    <main class="main">
+        <!-- page-title -->
+        <section class="page-title">
+            <div class="container flex">
+                <div class="col page__header">
+                    <h1>Item Details 1</h1>
+                    <nav class="page__breadcrumbs flex">
+                        <ul class="breadcrumb__list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">Pages</a></li>
+                            <li><a href="#">Author</a></li>
+                            <li>Edit Profile</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <!-- profile -->
+        <section class="profile">
+            <div class="container flex">
+                <div class="profile__pic">
+                    <div class="card profile_card">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="profile__content">
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <button id="back-to-top" class="back-to-top"><i class="fa-solid fa-angle-up"></i></button>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="col footer__item">
+                <div class="footer__logo">
+                    <img src="images/01_header/logo_dark.png" alt="Footer logo img">
+                </div>
+                <p>Lorem ipsum dolor sit amet,consectetur adipisicing elit. Quis non, fugit totam vel laboriosam vitae.
+                </p>
+            </div>
+            <div class="col footer__item">
+                <h4>My Account</h4>
+                <ul class="footer__navbar">
+                    <li><a href="#">Authors</a></li>
+                    <li><a href="#">Collection</a></li>
+                    <li><a href="#">Author Profile</a></li>
+                    <li><a href="#">Create Item</a></li>
+                </ul>
+            </div>
+            <div class="col footer__item">
+                <h4>Resources</h4>
+                <ul class="footer__navbar">
+                    <li><a href="#">Help & Support</a></li>
+                    <li><a href="#">Live Auctions</a></li>
+                    <li><a href="#">Item Details</a></li>
+                    <li><a href="#">Activity</a></li>
+                </ul>
+            </div>
+            <div class="col footer__item">
+                <h4>Company</h4>
+                <ul class="footer__navbar">
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Our Blog</a></li>
+                    <li><a href="#">Activity</a></li>
+                </ul>
+            </div>
+            <div class="col footer__item">
+                <h4>Subscribe Us</h4>
+                <form class="footer__newsletter-form">
+                    <div class="footer__newsletter-inner">
+                        <input type="email" placeholder="info@yourgmail.com">
+                        <button class="btn btn__primary" type="button">
+                            <i class="mdi mdi-send"></i>
+                        </button>
+                    </div>
+                </form>
+                <div class="footer__socials">
+                    <a class="footer__socials-list" href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="footer__socials-list" href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="footer__socials-list" href="#"><i class="fa-solid fa-paper-plane"></i></a>
+                    <a class="footer__socials-list" href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a class="footer__socials-list" href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a class="footer__socials-list" href="#"><i class="fa-brands fa-discord"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

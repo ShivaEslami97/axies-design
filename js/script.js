@@ -90,8 +90,9 @@ function hideSubMenu() {
     menu.querySelector(".menu-mobile-header").classList.remove("active");
 }
 
-window.onresize = function () {
-    if (this.innerWidth > 1199) {
+function checkMediaQuery() {
+    // Check if the media query is true
+    if (window.innerWidth > 1199) {
         document.querySelector('#btn_wallet').innerHTML = '<i class="fa-solid fa-wallet"></i> Wallet connect';
         if (menu.classList.contains("active")) {
             toggleMenu();
@@ -100,4 +101,5 @@ window.onresize = function () {
     else {
         document.querySelector('#btn_wallet').innerHTML = '<i class="fa-solid fa-wallet"></i>';
     }
-};
+}
+window.addEventListener('resize', checkMediaQuery);

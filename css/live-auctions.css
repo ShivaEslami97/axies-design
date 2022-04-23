@@ -2,11 +2,17 @@
   background-color: var(--primary-color-2);
   padding: 5.8rem 0 6.4rem;
 }
-
+.live-auctions .grid {
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  gap: 2rem;
+}
+.live-auctions .grid .col + .col {
+  margin-left: 0rem;
+}
 .live-auctions__card {
   border-radius: 2rem;
   margin-bottom: 2rem;
-  padding: 2rem;
+  padding: 1.5rem;
   background: var(--primary-color);
   box-shadow: 0.1rem -0.1rem 1.3rem rgb(33 53 68 / 57%);
   transition: 0.4s ease-out;
@@ -56,6 +62,7 @@
 }
 .card__img img {
   border-radius: 2rem;
+  width: 100%;
 }
 .card-content__header {
   border-bottom: 1px solid #14141f;
@@ -164,6 +171,9 @@
   font-weight: bold;
   font-size: 1.6rem;
   color: var(--white-color);
+}
+.live-auctions__card .card__countdown i {
+  color: var(--main-color);
 }
 .live-auctions__card .card__countdown span {
   margin-left: 1.5rem;

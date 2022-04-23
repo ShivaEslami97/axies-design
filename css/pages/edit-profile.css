@@ -1,0 +1,9 @@
+.profile {
+  background-color: var(--bg-color-1);
+}
+.profile__pic {
+  width: 32%;
+}
+.profile__content {
+  width: 62%;
+}

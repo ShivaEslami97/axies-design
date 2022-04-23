@@ -3,7 +3,7 @@
   background: var(--bg-color-1);
 }
 .top-seller__wrapper {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
   display: grid;
   gap: 2.5rem;
   width: 95%;
