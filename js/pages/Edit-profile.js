@@ -3,15 +3,15 @@ let myDropZone = document.querySelector('#ProfileUpload');
 
 let myDropzone = new Dropzone(myDropZone, {
     maxFiles: 1,
-    url: "/file/post",
+    url: "/",
     acceptedFiles: "image/*",
     addRemoveLinks: false,
     disablePreviews: true,
     thumbnailWidth: 488,
     thumbnailHeight: 488,
-    forceFallback: false,
     thumbnailMethod: "contain",
-    clickable: '.dropzone-click-target'
+    clickable: '.dropzone-click-target',
+    autoProcessQueue: false
 
 });
 myDropzone.on("thumbnail", function (file, dataUrl) {
