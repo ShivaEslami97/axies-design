@@ -63,6 +63,9 @@ textarea {
 
 .flex {
   display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
 
   /* gap: var(--gap, 1rem); */
 }
