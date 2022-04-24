@@ -230,6 +230,7 @@
 .dropzone-click-target {
   cursor: pointer;
 }
+
 /* Responive */
 @media only screen and (max-width: 991px) {
   .profile__media {

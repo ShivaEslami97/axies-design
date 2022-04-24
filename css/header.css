@@ -219,9 +219,10 @@ header {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  gap: 1rem;
 }
 .header__search {
-  margin-right: 3.6rem;
+  margin-right: 1.6rem;
   padding: 1.4rem 0;
   position: relative;
 }
@@ -280,6 +281,32 @@ header {
   justify-content: center;
   font-size: 2rem;
 }
+#btn_notification {
+  position: relative;
+  transition: all 150ms ease-in-out;
+}
+.header__notification-num {
+  position: absolute;
+  background-color: var(--primary-color-6);
+  border-radius: 50rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+  top: -0.6rem;
+  right: -0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#btn_notification:hover i {
+  animation: ring 600ms ease-in-out;
+  -webkit-animation: ring 600ms ease-in-out;
+  background: linear-gradient(216.56deg, #e250e5 5.32%, #4b50e6 94.32%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .night,
 .btn__login {
   display: flex;
@@ -298,17 +325,6 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-@keyframes spin-animation {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 .menu-btn,
 .menu-mobile-header {
   font-size: 2rem;
@@ -332,6 +348,32 @@ header {
   -moz-box-shadow: 0 4px 20px 0 rgba(10, 10, 10, 0.8);
   box-shadow: 0 4px 20px 0 rgb(10 10 10 / 80%);
   border-bottom: 1px solid rgb(235 235 235 / 0%);
+}
+@keyframes spin-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes ring {
+  20% {
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+  40% {
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+  60% {
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+  80% {
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+  to {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
 }
 
 @-webkit-keyframes slide-toLeft {
