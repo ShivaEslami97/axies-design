@@ -112,6 +112,7 @@ header {
 .nav__child li {
   color: var(--bg-color-1);
   padding: 1.5rem;
+  cursor: pointer;
 }
 .nav__child li a {
   color: var(--bg-color-1);
@@ -124,7 +125,7 @@ header {
   -moz-transition: 0.3s ease-in-out;
   -ms-transition: 0.3s ease-in-out;
 }
-.nav__child li a:hover {
+.nav__child li:hover a {
   padding-left: 1.8rem;
   color: var(--main-color);
 }
@@ -150,7 +151,7 @@ header {
   -ms-transition: 0.3s ease-in-out;
   background-color: var(--main-color);
 }
-.nav__child li a:hover::before {
+.nav__child li:hover a::before {
   opacity: 1;
   visibility: visible;
   -webkit-transform: translateY(-50%) translateX();

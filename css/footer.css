@@ -119,9 +119,9 @@
   font-size: 2rem;
 }
 .footer__socials {
-  display: flex;
+  display: grid;
   gap: 1rem;
-  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
 }
 .footer__socials-list {
   display: -webkit-box;
@@ -129,7 +129,8 @@
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  padding: 1rem;
+  width: 4rem;
+  height: 4rem;
   font-size: 2rem;
   background-color: var(--primary-color);
   border-radius: 0.5rem;

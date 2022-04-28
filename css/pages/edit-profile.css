@@ -84,7 +84,7 @@
 .profile_card {
   border-radius: 2rem;
   margin-bottom: 2rem;
-  padding: 2rem;
+  padding: 1.7rem;
   background: var(--primary-color);
   box-shadow: 0.1rem -0.1rem 1.3rem rgb(33 53 68 / 57%);
   transition: 0.4s ease-out;
@@ -103,6 +103,10 @@
   -ms-border-radius: 0.8rem;
   -o-border-radius: 0.8rem;
 }
+.cover-upload__image {
+  cursor: pointer;
+}
+
 .cover-upload__image img {
   height: 100%;
   width: 100%;
@@ -129,7 +133,7 @@
 }
 .profile__account-info,
 .profile__account-social {
-  width: 42%;
+  width: 49%;
 }
 .form-input {
   position: relative;
@@ -181,7 +185,7 @@
   color: var(--main-color);
 }
 .profile__account-social {
-  padding-left: 3rem;
+  padding-left: 0rem;
 }
 .profile__input-field .btn__primary {
   font-size: 1.4rem;
