@@ -2,9 +2,6 @@
   background: var(--bg-color-1);
   padding: 7.9rem 0 8rem;
 }
-.features .col + .col {
-  margin-left: 3.3rem;
-}
 .features .grid {
   grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
   gap: 2rem;

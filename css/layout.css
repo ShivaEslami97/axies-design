@@ -85,9 +85,9 @@ textarea {
 .col {
   width: 100%;
 }
-.col + .col {
+/* .col + .col {
   margin-left: 3rem;
-}
+} */
 .mb-0 {
   margin-bottom: 0;
 }

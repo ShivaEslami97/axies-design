@@ -1,4 +1,15 @@
 /**** media query  *****/
+@media only screen and (max-width: 1291px) {
+  .header .wrapper {
+    gap: 3rem;
+  }
+  .theme__switcher {
+    margin-left: 2rem;
+  }
+  .header__search {
+    margin-right: 0;
+  }
+}
 @media only screen and (max-width: 1199px) {
   #btn_wallet {
     width: 4.5rem;
@@ -9,6 +20,9 @@
     align-items: center;
     padding: 0;
   }
+  .header__search {
+    display: none;
+  }
   .header .btn__primary i {
     padding-right: 0rem;
   }
@@ -16,38 +30,30 @@
     margin-left: 1rem;
   }
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   .container {
     width: 1467px;
     max-width: 100%;
     padding-inline: 1.5em;
   }
   /**** header and menu  *****/
-  .header {
-    /* padding: 1rem 0; */
+  .header .inner_header {
+    padding: 0.5rem 0;
   }
-  .wrapper {
+  .header .wrapper {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    gap: 0rem;
   }
   .menu-btn {
     display: block;
     margin-left: 1.25rem;
   }
   .header__item-center {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
     -webkit-box-ordinal-group: 4;
     -ms-flex-order: 3;
     order: 3;
-  }
-  .header__item-left,
-  .header__item-right {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
   }
   .header__item-right {
     -webkit-box-align: center;

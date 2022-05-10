@@ -49,7 +49,7 @@ header {
 .nav__link {
   color: var(--white-color);
   text-decoration: none;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   font-weight: 700;
   -webkit-transition: all linear 0.3s;
   -moz-transition: all linear 0.3s;
@@ -162,31 +162,19 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 54%;
-  flex: 0 0 54%;
+  max-width: 60rem;
 }
 .header__item-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 14%;
-  flex: 0 0 14%;
 }
 .header__item-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 32%;
-  flex: 0 0 32%;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+  max-width: 40rem;
+  margin-left: auto;
 }
 .site-logo {
   height: 5.6rem;
@@ -200,6 +188,7 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  gap: 5rem;
 }
 .header .btn__primary {
   font-size: 1.5rem;

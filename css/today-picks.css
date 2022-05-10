@@ -20,15 +20,28 @@
 .picks__filter {
   width: 100%;
   display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 1.5rem;
 }
 .filter__category {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 1.5rem;
-  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .picks__card {
   display: grid;
