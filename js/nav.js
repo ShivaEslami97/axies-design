@@ -58,6 +58,9 @@ function checkMediaQuery() {
             toggleMenu();
         }
     }
+    if (window.innerWidth > 991) {
+        subMenu.style.animation = "";
+    }
     else {
         if (wallet) {
             wallet.innerHTML = '<i class="fa-solid fa-wallet"></i>';
