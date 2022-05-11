@@ -43,5 +43,6 @@ document.onclick = function (e) {
     //element clicked wasn't the div; hide the div
     if (!headerSearchbox.contains(e.target) && !headerSearchBtn.contains(e.target)) {
         headerSearchbox.classList.remove('show');
+        document.querySelector('.search__input').value = '';
     }
 };
