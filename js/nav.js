@@ -1,3 +1,20 @@
+///// sticky menu
+window.onscroll = function () {
+    myFunction()
+};
+
+var header = document.getElementById("header");
+var sticky = header.offsetTop;
+
+function myFunction() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+    } else {
+        header.classList.remove("sticky");
+    }
+}
+
+
 ///// mobile menu
 const menu = document.querySelector('.navbar');
 const menuTrigger = document.querySelector('.menu-btn');
@@ -8,9 +25,11 @@ const menuOverlay = document.querySelector('.overlay');
 let subMenu;
 
 menuItem.addEventListener('click', (e) => {
-    if (e.target.closest('.has-children')) {
-        const hasChildren = e.target.closest('.has-children');
-        showSubMenu(hasChildren);
+    if (window.innerWidth < 991) {
+        if (e.target.closest('.has-children')) {
+            const hasChildren = e.target.closest('.has-children');
+            showSubMenu(hasChildren);
+        }
     }
 });
 
@@ -59,7 +78,10 @@ function checkMediaQuery() {
         }
     }
     if (window.innerWidth > 991) {
-        subMenu.style.animation = "";
+        let subMenuCheck = document.querySelectorAll('.nav__child');
+        subMenuCheck.forEach(item => {
+            item.style.animation = "";
+        });
     }
     else {
         if (wallet) {

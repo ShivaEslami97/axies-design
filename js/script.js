@@ -1,19 +1,4 @@
-window.onscroll = function () {
-    myFunction()
-};
-
-var header = document.getElementById("header");
-var sticky = header.offsetTop;
-
-function myFunction() {
-    if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
-    } else {
-        header.classList.remove("sticky");
-    }
-}
 ///////// back to top
-
 const showOnPx = 100;
 const backToTopButton = document.querySelector(".back-to-top");
 const scrollContainer = () => {
@@ -39,4 +24,24 @@ backToTopButton.addEventListener("click", goToTop);
 let overlay = document.getElementById("preloader");
 window.addEventListener('load', function () {
     overlay.style.display = 'none';
-})
+});
+///// searchBox
+const headerSearchBtn = document.querySelector(".search__link");
+const headerSearchbox = document.querySelector(".search__open-box");
+
+headerSearchBtn.addEventListener("click", function (params) {
+    if (headerSearchbox.classList.contains('show')) {
+        headerSearchbox.classList.remove('show');
+        document.querySelector('.search__input').value = '';
+    }
+    else {
+        headerSearchbox.classList.add('show');
+    }
+});
+
+document.onclick = function (e) {
+    //element clicked wasn't the div; hide the div
+    if (!headerSearchbox.contains(e.target) && !headerSearchBtn.contains(e.target)) {
+        headerSearchbox.classList.remove('show');
+    }
+};
