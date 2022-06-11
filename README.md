@@ -14,20 +14,13 @@ You can see the demo here 👇:
 - Item Details: https://shiva-eslami-axies-theme.netlify.app/item-details.html
 ## ✨ Features
 
-✔️ Light/dark mode toggle
-
-✔️ CSS3 Animations 
-
-✔️ Mega Menus
-
-✔️ Clean & Modern Design
-
-✔️ Cross platform
-
-✔️ Semantic Markup
-
-✔️ Mobile Navigations
-
+✔️ Light/dark mode toggle\
+✔️ CSS3 Animations\
+✔️ Mega Menus\
+✔️ Clean & Modern Design\
+✔️ Cross platform\
+✔️ Semantic Markup\
+✔️ Mobile Navigations\
 ✔️ Fully Responsive to all devices
 
 
