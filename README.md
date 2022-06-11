@@ -40,7 +40,7 @@ You can see the demo here 👇:
 
 - [github Profile](https://github.com/ShivaEslami97)
 - [linkedin Profile](https://www.linkedin.com/in/shiva-esmailpoureslami/)
-- [Email](shivaeslami97@gmail.com)
+- <shivaeslami97@gmail.com>
 
 ## 🤝 Support
 
