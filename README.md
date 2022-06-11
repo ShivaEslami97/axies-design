@@ -15,19 +15,27 @@ You can see the demo here 👇:
 ## ✨ Features
 
 ✔️ Light/dark mode toggle
+
 ✔️ CSS3 Animations 
+
 ✔️ Mega Menus
+
 ✔️ Clean & Modern Design
+
 ✔️ Cross platform
+
 ✔️ Semantic Markup
+
 ✔️ Mobile Navigations
+
 ✔️ Fully Responsive to all devices
 
 
 ## Screenshots
 
-screencapture-shiva-eslami-axies-theme-netlify-app-index-html-2022-06-11-13_46_20 (2).png
 
+
+![App Screenshot](https://user-images.githubusercontent.com/25490229/173183657-9cde4fee-ed13-45ee-9c76-38af9b63a296.png)
 
 
 ## 🚀 Technologies
