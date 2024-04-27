@@ -183,7 +183,8 @@ main #login .container {
 
 .signin-other-title {
   position: relative;
-  width: 31rem;
+  max-width: 31rem;
+  width: 100%;
   text-align: center;
 }
 
@@ -308,4 +309,16 @@ main #login .container {
   .login__img {
     display: none;
   }
+
+  .signin-other-title {
+    width: 85%;
+  }
+
+  .login__content .new-signup {
+    font-size: 1.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
 }
