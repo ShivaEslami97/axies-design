@@ -304,4 +304,8 @@ main #login .container {
     width: 85%;
     min-height: 55vh;
   }
+
+  .login__img {
+    display: none;
+  }
 }
