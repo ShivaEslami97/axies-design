@@ -3,11 +3,14 @@
   padding: 0 0;
   min-height: 100vh;
 }
+
 main #login .container {
   width: 1640px;
   max-width: 100%;
   padding-inline: 0em;
+  justify-content: space-evenly;
 }
+
 .login__img {
   width: 60%;
   display: -webkit-box;
@@ -20,6 +23,7 @@ main #login .container {
   -ms-flex-align: center;
   align-items: center;
 }
+
 .login__content {
   width: 40%;
   -webkit-box-orient: vertical;
@@ -37,28 +41,34 @@ main #login .container {
   padding: 7.2rem 0 7.2rem;
   background-color: #2a2a4a;
 }
+
 .login__img img {
   height: 56rem;
   opacity: 0.8;
 }
+
 .login__content h2 {
   color: var(--white-color);
   font-size: 2.75rem;
 }
+
 .login__form {
-  width: 40rem;
+  max-width: 40rem;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   display: flex;
   gap: 2rem;
 }
+
 .form__label {
   display: inline-block;
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
   color: var(--primary-color-1);
 }
+
 .login__form input {
   display: block;
   width: 100%;
@@ -79,6 +89,7 @@ main #login .container {
   -ms-transition: border-color 0.15s ease-in-out;
   -o-transition: border-color 0.15s ease-in-out;
 }
+
 .input-icons {
   position: absolute;
   font-size: 1rem;
@@ -87,16 +98,20 @@ main #login .container {
   font-size: 1.3rem;
   color: #878a99;
 }
+
 .login__form input:focus,
 .login__form input:active {
   border: 1px solid var(--main-color);
 }
-.login__form input:focus + .input-icons {
+
+.login__form input:focus+.input-icons {
   color: var(--main-color);
 }
+
 .form__input {
   width: 77%;
 }
+
 .form--submit .btn {
   background-color: var(--main-color);
   width: 100%;
@@ -117,6 +132,7 @@ main #login .container {
   overflow: hidden;
   z-index: 1;
 }
+
 .form--submit .btn:hover {
   transform: translateY(-0.3rem);
   -webkit-transform: translateY(-0.3rem);
@@ -124,6 +140,7 @@ main #login .container {
   -ms-transform: translateY(-0.3rem);
   -o-transform: translateY(-0.3rem);
 }
+
 .form--submit .btn::before {
   content: "";
   position: absolute;
@@ -140,13 +157,16 @@ main #login .container {
   -o-border-radius: 0.475rem;
   z-index: -1;
 }
+
 .form--submit .btn:hover:before {
   width: 100%;
 }
+
 .login__content .new-signup {
   font-size: 1.5rem;
   color: var(--white-color);
 }
+
 .login__content .new-signup a {
   color: var(--main-color);
   padding-left: 0.3rem;
@@ -156,6 +176,7 @@ main #login .container {
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
+
 .login__content .new-signup a:hover {
   color: #7b71e8;
 }
@@ -165,6 +186,7 @@ main #login .container {
   width: 31rem;
   text-align: center;
 }
+
 .signin-other-title span {
   color: var(--primary-color-1);
   padding: 0.2rem 2.6rem;
@@ -173,6 +195,7 @@ main #login .container {
   background-color: #2a2a4a;
   font-size: 1.5rem;
 }
+
 .signin-other-title::before,
 .signin-other-title:after {
   content: "";
@@ -183,18 +206,22 @@ main #login .container {
   top: 10px;
   z-index: 900;
 }
+
 .signin-other-title::before {
   left: 0;
   right: 0;
 }
+
 .signin-other-title:after {
   left: auto;
   right: 0;
 }
+
 .login__social {
   display: flex;
   gap: 0.9rem;
 }
+
 .social__icon {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -221,6 +248,7 @@ main #login .container {
   -o-transition: all 0.7s ease;
   transition: all 0.7s ease;
 }
+
 .social__icon:hover {
   border-radius: 50%;
   -moz-transform: rotate(360deg);
@@ -229,18 +257,23 @@ main #login .container {
   -ms-transform: rotate(360deg);
   transform: rotate(360deg);
 }
+
 .social__icon.social--facebook {
   background: #3b5999;
 }
+
 .social__icon.social--twitter {
   background: #55acee;
 }
+
 .social__icon.social--gmail {
   background: #dd4b39;
 }
+
 .social__icon.social--github {
   background: #333;
 }
+
 #password-show {
   top: 0;
   right: 0;
@@ -251,10 +284,24 @@ main #login .container {
   color: #878a99;
   cursor: pointer;
 }
+
 .form--password,
 .form--email {
   position: relative;
 }
-.login__form input#password[type="text"] + #password-show .fa-eye::before {
+
+.login__form input#password[type="text"]+#password-show .fa-eye::before {
   content: "\f2a8";
+}
+
+@media only screen and (max-width: 698px) {
+  main #login .container {
+    align-items: center;
+    min-height: 100%;
+  }
+
+  .login__content {
+    width: 85%;
+    min-height: 55vh;
+  }
 }
